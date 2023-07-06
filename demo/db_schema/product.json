@@ -1,0 +1,22 @@
+{
+  "shoppe.product": {
+    "transaction": true,
+    "partition-key": [
+      "id"
+    ],
+    "clustering-key": [],
+    "columns": {
+      "id": "TEXT",
+      "name": "TEXT",
+      "category": "INT",
+      "title": "TEXT",
+      "intro": "TEXT",
+      "image": "TEXT",
+      "price": "DOUBLE",
+      "selling_price": "DOUBLE",
+      "stock": "INT",
+      "limit_count": "INT",
+      "sale_count": "INT"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "shoppe.cart": {
+    "transaction": true,
+    "partition-key": [
+      "id"
+    ],
+    "clustering-key": [],
+    "columns": {
+      "id": "TEXT",
+      "user_id": "TEXT",
+      "product_id": "TEXT",
+      "count": "INT"
+    }
+  }
+}

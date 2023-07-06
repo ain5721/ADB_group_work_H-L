@@ -1,0 +1,14 @@
+{
+  "shoppe.carousel": {
+    "transaction": true,
+    "partition-key": [
+      "id"
+    ],
+    "clustering-key": [],
+    "columns": {
+      "id": "TEXT",
+      "path": "TEXT",
+      "desc": "TEXT"
+    }
+  }
+}

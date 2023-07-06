@@ -1,0 +1,15 @@
+{
+  "shoppe.product_image": {
+    "transaction": true,
+    "partition-key": [
+      "id"
+    ],
+    "clustering-key": [],
+    "columns": {
+      "id": "TEXT",
+      "product_id": "TEXT",
+      "path": "TEXT",
+      "intro": "TEXT"
+    }
+  }
+}

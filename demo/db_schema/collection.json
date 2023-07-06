@@ -1,0 +1,15 @@
+{
+  "shoppe.collection": {
+    "transaction": true,
+    "partition-key": [
+      "id"
+    ],
+    "clustering-key": [],
+    "columns": {
+      "id": "TEXT",
+      "user_id": "TEXT",
+      "product_id": "TEXT",
+      "time_created": "BIGINT"
+    }
+  }
+}

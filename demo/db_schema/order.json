@@ -1,0 +1,18 @@
+{
+  "shoppe.order": {
+    "transaction": true,
+    "partition-key": [
+      "id"
+    ],
+    "clustering-key": [],
+    "columns": {
+      "id": "TEXT",
+      "trans_id": "TEXT",
+      "user_id": "TEXT",
+      "product_id": "TEXT",
+      "count": "INT",
+      "amount": "DOUBLE",
+      "time_created": "BIGINT"
+    }
+  }
+}

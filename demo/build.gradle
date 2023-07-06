@@ -1,0 +1,41 @@
+plugins {
+	id 'java'
+	id 'org.springframework.boot' version '2.7.12'
+	id 'io.spring.dependency-management' version '1.0.15.RELEASE'
+}
+
+group = 'com.scalardb'
+version = '0.0.1-SNAPSHOT'
+
+java {
+	sourceCompatibility = '1.8'
+}
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation group: 'org.apache.commons', name: 'commons-lang3', version: '3.9'
+	implementation group: 'com.google.guava', name: 'guava', version: '32.1.0-jre'
+
+
+	implementation 'com.scalar-labs:scalardb:3.9.0'
+	implementation 'org.slf4j:slf4j-simple:1.7.30'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.springframework.boot:spring-boot-starter-validation'
+
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
+
+//configurations {
+//	//all*.exclude module: 'spring-boot-starter-logging'
+//}
+
+configurations {
+	all*.exclude group: 'ch.qos.logback', module: 'logback-classic'
+}
+
+tasks.named('test') {
+	useJUnitPlatform()
+}
