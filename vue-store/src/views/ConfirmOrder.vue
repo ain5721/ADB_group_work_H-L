@@ -92,7 +92,7 @@
             </li>
             <li>
               <span class="title">Freight:</span>
-              <span class="value">0元</span>
+              <span class="value">0 yen</span>
             </li>
             <li class="total">
               <span class="title">Final amount:</span>
